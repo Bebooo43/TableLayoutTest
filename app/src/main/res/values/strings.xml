@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TableLayoutTest</string>
+    <string name="enter_android_version_et_hint">Enter Android Version</string>
+    <string name="enter_android_code_name_et_hint">Enter Android Code Name</string>
+    <string name="add_btn_text">ADD</string>
+    <string name="version_row_title_text">Version</string>
+    <string name="code_name_row_title_text">Code Name</string>
+</resources>

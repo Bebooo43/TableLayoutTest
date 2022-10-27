@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:padding="10dp">
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/androidVersionET"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_android_version_et_hint" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/androidCodeNameET"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_android_code_name_et_hint" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/addBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_btn_text"
+        android:textAllCaps="true" />
+
+    <TableLayout
+        android:id="@+id/androidTL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="4dp"
+        android:stretchColumns="*">
+
+        <TableRow android:background="@color/purple_custom"
+            android:layout_marginBottom="5dp"
+            tools:ignore="UselessParent">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:text="@string/version_row_title_text"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:text="@string/code_name_row_title_text" />
+        </TableRow>
+    </TableLayout>
+
+
+</LinearLayout>
